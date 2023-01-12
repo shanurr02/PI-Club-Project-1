@@ -1,0 +1,42 @@
+.div-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidenav-container{
+    height: 100vh;
+    position: sticky;
+    width:100%;
+    top:0px;
+    padding: 10px;
+    padding-top: 100px;
+    background: #dfd9ff;
+    color: black; 
+    box-shadow:rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.sideNav-Item{
+   text-align: center;
+   padding: 10px 10px;
+   border-bottom: 1px solid white;
+}
+@media screen and (max-width:480px) {
+    .sidenav-container{
+        height: auto;
+        position: block;
+        width:100%;
+        padding: 10px;
+        display: flex;
+        margin-top: 80px;
+        justify-content: space-between;
+        flex-direction: row;
+        overflow-x: scroll;
+    }   
+    .side-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .sideNav-Item{
+        margin-top: 10px;    
+     }
+}
